@@ -42,6 +42,7 @@ new Vue({
       console.log('::::::::::::::::::username::::::::::::::::::' + this.username);
       console.log('::::::::::::::::::password::::::::::::::::::' + this.password);
 
+      
       const form = new URLSearchParams();
       form.append('username', this.username);
       form.append('password', this.password);
