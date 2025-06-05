@@ -9,7 +9,7 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/', redirect: '/login' }, //최초 로그인화면
-    { path: '/login', name: 'Login', component: Login }, //최초 로그인화면(위와 동일)
-    { path: '/home', name: 'Home', component: Home } // 로그인 완료시
+    { path: '/login', name: 'LoginPage', component: Login }, //최초 로그인화면(위와 동일)
+    { path: '/home', name: 'HomePage', component: Home } // 로그인 완료시
   ]
 });

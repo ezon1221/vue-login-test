@@ -32,7 +32,8 @@ export default {
       axios.post('/login', form, {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
       }).then(() => {
-        alert('로그인 성공')
+        alert('로그인 성공');
+        this.$router.push('/home');
       }).catch(error => {
         if (error.response && error.response.data) {
           alert(error.response.data.message)
@@ -45,7 +46,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .wrap {
   position: relative;
   height: 100vh;
@@ -73,7 +74,7 @@ export default {
 
 .login_form input {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin-bottom: 12px;
   box-sizing: border-box;
   border: 1px solid #ccc;
